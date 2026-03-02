@@ -3,53 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Rao</title>
     <link rel="stylesheet" href="styles.css">
-    <title>My Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .navbar { position: sticky; top: 0; background-color: #333; padding: 15px; }
-        .navbar a { color: white; padding: 14px 20px; text-decoration: none; }
-        .navbar a:hover { background-color: #575757; }
-        .menu-toggle { display: none; }
-        @media (max-width: 768px) {
-            .navbar a { display: none; }
-            .menu-toggle { display: block; }
-        }
-        .navbar.active a { display: block; }
-        section { padding: 60px 20px; }
-    </style>
 </head>
 <body>
     <div class="navbar">
-        <span class="menu-toggle">☰</span>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
+        <div class="logo">Varun Rao</div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 
-    <section id="home"><h1>Home</h1></section>
-    <section id="about"><h1>About</h1></section>
-    <section id="work"><h1>Work</h1></section>
-    <section id="contact"><h1>Contact</h1></section>
+    <section id="home">
+        <h1>Varun Rao</h1>
+        <p>Startup Operator · Revenue Hunter · GTM Automation Builder</p>
+    </section>
 
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.navbar').classList.toggle('active');
-        });
+    <section id="work">
+        <h2>Work</h2>
+        <div class="work-card" id="outbound">
+            <h3>Outbound Infrastructure</h3>
+            <p>Description of Outbound Infrastructure project.</p>
+        </div>
+        <div class="work-card" id="revenue-models">
+            <h3>Revenue Models</h3>
+            <p>Description of Revenue Models project.</p>
+        </div>
+        <div class="work-card" id="gtm-automation">
+            <h3>GTM Automation</h3>
+            <p>Description of GTM Automation project.</p>
+        </div>
+    </section>
 
-        const scrollLinks = document.querySelectorAll('.navbar a');
-        scrollLinks.forEach(link => {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                window.scrollTo({
-                    top: targetSection.offsetTop,
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <section id="contact">
+        <h2>Contact</h2>
+        <a href="https://www.linkedin.com/in/varunrao16">LinkedIn</a>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
