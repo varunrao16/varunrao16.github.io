@@ -1,0 +1,145 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf7f2;
+  color: #2c2a26;
+  line-height: 1.7;
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Nav */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #faf7f2;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5ddd0;
+  box-sizing: border-box;
+}
+
+.nav-brand {
+  font-weight: 600;
+  font-size: 15px;
+  color: #2c2a26;
+  text-decoration: none;
+}
+
+.nav-brand:hover {
+  color: #8b6f47;
+}
+
+.nav-links a {
+  color: #7a6e62;
+  margin-left: 24px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #8b6f47;
+}
+
+/* Layout */
+.container {
+  max-width: 800px;
+  margin: 120px auto;
+  padding: 0 20px;
+}
+
+/* Typography */
+h1 {
+  font-size: 42px;
+  letter-spacing: -1px;
+  color: #1a1814;
+}
+
+.tagline {
+  font-size: 20px;
+  color: #7a6e62;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #8b6f47;
+}
+
+/* Card */
+.card {
+  background: #f0ead9;
+  border: 1px solid #e5ddd0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Projects */
+.project {
+  margin-bottom: 50px;
+}
+
+.project h2 {
+  color: #8b6f47;
+}
+
+/* Writing */
+.post {
+  margin-bottom: 30px;
+}
+
+.post a {
+  color: #8b6f47;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post-coming {
+  color: #7a6e62;
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* Contact */
+.contact-links {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.contact-links a {
+  color: #8b6f47;
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 1px solid #c4a882;
+  padding-bottom: 1px;
+}
+
+.contact-links a:hover {
+  color: #6b5336;
+  border-color: #6b5336;
+}
+
+/* Footer */
+.footer {
+  margin-top: 80px;
+  font-size: 14px;
+  color: #a89880;
+}
